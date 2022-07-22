@@ -3,7 +3,7 @@ import "./Landing.css";
 import Shape from "../../assets/image/Ellipse 1.png";
 import { AiOutlineClose } from "react-icons/ai";
 const Landing = () => {
-  const [modalOpen, setModalOpen] = useState(true);
+  const [modalOpen, setModalOpen] = useState(false);
   const handlemodal = () => {
     setModalOpen(!modalOpen);
     console.log(modalOpen);

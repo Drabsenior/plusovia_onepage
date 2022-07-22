@@ -7,13 +7,100 @@
 .logonav {
   margin-left: 20px;
 }
+.mobilescreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: #f5f5f5;
+}
+.nalinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+}
+.navcloseicon {
+  position: absolute;
+  right: 35px;
+  top: 25px;
+  cursor: pointer;
+}
+.relnavlinks ul {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.relnavlinks ul li {
+  margin-right: 25px;
+  color: white;
+  font-family: "Kulim Park";
+  cursor: pointer;
+  padding: 5px;
+}
+.relnavlinks button {
+  border: none;
+  padding: 7px 15px;
+  font-size: 18px;
+  margin-right: 85px;
+  margin-left: 95px;
+  border-radius: 10px;
+  background-color: #0a4655;
+  color: white;
+  font-family: "Kulim Park";
+  cursor: pointer;
+}
+.nalinks ul li {
+  font-size: 25px;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.nalinks button {
+  margin-top: 20px;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: #0a4655;
+  color: white;
+  font-family: "Kulim Park";
+  cursor: pointer;
+}
 .logonav img {
   width: 70px;
 }
 .linknav {
   margin-right: 30px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 .linknav svg {
   font-size: 32px;
   color: white;
+}
+.linknav {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .relnavlinks {
+    display: none;
+  }
+  .nalinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+  }
+  .linknav {
+    display: block;
+    margin-right: 0px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
 }
