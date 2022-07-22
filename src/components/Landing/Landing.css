@@ -37,10 +37,12 @@
 }
 .btncontain {
   display: flex;
-  width: 800px;
+  width: 900px;
   flex-direction: row;
   margin-top: 25px;
   align-items: center;
+  overflow: visible;
+  margin-left: 15px;
 }
 .watchbtn {
   padding: 8px 15px;
