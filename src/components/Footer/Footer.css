@@ -1,0 +1,84 @@
+.footercontainer {
+  background-color: #0d7e9b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 10px 0px;
+  height: 180px;
+  font-family: "Kulim Park", sans-serif;
+}
+.footerdetail {
+  text-align: right;
+  margin-right: 55px;
+}
+.footerdetail h2 {
+  font-size: 25px;
+  position: relative;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.footerdetail h2::after {
+  height: 5px;
+  width: 120%;
+  border-radius: 15px;
+  background-color: white;
+  position: absolute;
+  top: 28px;
+  left: -10px;
+  content: "";
+}
+
+.footerdetail p {
+  margin-top: 2px;
+  font-size: 16px;
+  font-family: "Kulim Park", sans-serif;
+}
+.footerlogo img {
+  margin-left: 40px;
+  width: 100px;
+  height: 100px;
+}
+@media screen and (max-width: 450px) {
+  .footercontainer {
+    background-color: #0d7e9b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 0px;
+    font-family: "Kulim Park", sans-serif;
+  }
+  .footerdetail {
+    text-align: right;
+    margin-right: 15px;
+  }
+  .footerdetail h2 {
+    font-size: 25px;
+    position: relative;
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+  .footerdetail h2::after {
+    height: 5px;
+    width: 120%;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    top: 28px;
+    left: -10px;
+    content: "";
+  }
+
+  .footerdetail p {
+    margin-top: 2px;
+
+    font-size: 16px;
+    font-family: "Kulim Park", sans-serif;
+  }
+  .footerlogo img {
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+  }
+}

@@ -1,0 +1,19 @@
+.navbarcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(173.35deg, #0a4655 -27.69%, #51d0d3 131.71%);
+}
+.logonav {
+  margin-left: 20px;
+}
+.logonav img {
+  width: 70px;
+}
+.linknav {
+  margin-right: 30px;
+}
+.linknav svg {
+  font-size: 32px;
+  color: white;
+}
