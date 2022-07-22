@@ -1,4 +1,5 @@
 import Footer from "./components/Footer/Footer";
+import Gallery from "./components/Gallery/Gallery";
 import Landing from "./components/Landing/Landing";
 import Navbar from "./components/Navbar/Navbar";
 import Offer from "./components/Offer/Offer";
@@ -15,7 +16,8 @@ function App() {
       <Youtube />
       <Project />
       <Why />
-      {/* <Offer /> */}
+      <Offer />
+      <Gallery />
       <Footer />
     </div>
   );

@@ -1,0 +1,18 @@
+.galleryimg {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+.galleryimg img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+.gallerycontainer {
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.slick-dots {
+  bottom: 70px;
+}
