@@ -17,6 +17,7 @@
   padding: 5px 10px;
   position: relative;
   top: 10px;
+  width: 310px;
   z-index: 999;
 }
 .offerpackage {
@@ -41,6 +42,7 @@
   font-size: 40px;
   color: #0a4655;
   position: relative;
+  overflow: visible;
   margin-bottom: 40px;
 }
 .offerpackage h2::after {
@@ -80,13 +82,13 @@
   margin-top: 15px;
   font-family: "Kulim Park";
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 980px) {
   .offerpackage {
     padding-top: 35px;
     width: 60vw;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   .offercontainer {
     display: flex;
     justify-content: center;
@@ -104,6 +106,7 @@
     border-radius: 5px;
     padding: 5px 10px;
     position: relative;
+    width: 300px;
     top: 10px;
     z-index: 999;
   }

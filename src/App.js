@@ -7,19 +7,29 @@ import Project from "./components/Projects/Project";
 import Why from "./components/Why/Why";
 
 import Youtube from "./components/Youtube/Youtube";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="app">
-      <Navbar />
-      <Landing />
-      <Youtube />
-      <Project />
-      <Why />
-      <Offer />
-      <Gallery />
-      <Footer />
-    </div>
+    <Router>
+      <div className="app">
+        <Navbar />
+        <Routes>
+          <Route
+            path="/order"
+            element={() => {
+              window.location.replace("https://plusova.com/Order.html");
+            }}
+          />
+        </Routes>
+        <Landing />
+        <Youtube />
+        <Project />
+        <Why />
+        <Offer />
+        <Gallery />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

@@ -17,6 +17,7 @@
   position: relative;
   margin-bottom: 10px;
   font-weight: normal;
+  overflow: hidden;
 }
 .footerdetail h2::after {
   height: 5px;
