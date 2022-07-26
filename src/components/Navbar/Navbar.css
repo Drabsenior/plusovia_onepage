@@ -35,15 +35,16 @@
   align-items: center;
 }
 .relnavlinks ul li {
-  margin-right: 25px;
+  margin-right: 18px;
   color: white;
-  font-family: "Kulim Park";
+  font-family: "Bellota Text", cursive;
   cursor: pointer;
   padding: 5px;
+  position: relative;
 }
 .relnavlinks button {
   border: none;
-  padding: 7px 15px;
+  padding: 7px 25px;
   font-size: 18px;
   margin-right: 85px;
   margin-left: 95px;
@@ -53,11 +54,32 @@
   font-family: "Kulim Park";
   cursor: pointer;
 }
+.relnavlinks ul li:hover::after {
+  content: "";
+  position: absolute;
+  background-color: #e7e6e5;
+  top: 0;
+  height: 5px;
+  width: 100px;
+  left: 0;
+  transition: all 2s ease-in-out;
+}
+.relnavlinks ul li:hover::before {
+  content: "";
+  position: absolute;
+  background-color: #e7e6e5;
+  bottom: 0;
+  height: 5px;
+  width: 100px;
+  left: 0;
+}
+
 .nalinks ul li {
   font-size: 25px;
   margin-top: 20px;
   text-align: center;
   cursor: pointer;
+  display: block;
 }
 .nalinks button {
   margin-top: 20px;

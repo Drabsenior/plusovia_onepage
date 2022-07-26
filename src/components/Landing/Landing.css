@@ -4,12 +4,16 @@
   align-items: flex-start;
   margin-bottom: 20px;
   width: 100%;
-  overflow: hidden;
+  padding: 0px !important;
+  overflow: visible;
 }
-
+.fullimage {
+  width: 600px;
+  margin-top: 12.5%;
+}
 .landingcontent {
   padding: 5px 20px;
-  margin-top: 50px;
+  margin-top: 200px;
   width: 80%;
   display: flex;
   justify-content: center;
@@ -22,18 +26,19 @@
 }
 .shapeicon img {
   width: 100px;
+  display: none;
 }
 .landingcontent h2 {
   font-size: 45px;
   font-family: "Krona One", sans-serif;
   color: #0a4655;
-  width: 50%;
+  width: 65%;
 }
 .landingcontent p {
-  margin-top: 15px;
+  margin-top: 35px;
   color: #0a4655;
-  width: 26%;
-  margin-left: 2%;
+  width: 49%;
+  margin-left: 0%;
   font-size: 25px;
   line-height: 1.3;
   font-family: "Kulim Park";
@@ -42,10 +47,10 @@
   display: flex;
   width: 900px;
   flex-direction: row;
-  margin-top: 25px;
+  margin-top: 45px;
   align-items: center;
   overflow: visible;
-  margin-left: 15px;
+  margin-left: 0px;
 }
 .watchbtn {
   padding: 8px 15px;
@@ -104,6 +109,7 @@
   position: fixed;
   justify-content: center;
   align-items: center;
+  top: 0;
   width: 100vw !important;
   height: 100vh !important;
   overflow: hidden !important;
@@ -115,9 +121,12 @@
 }
 @media screen and (max-width: 900px) {
   .landingcontent p {
-    margin-left: 2%;
+    margin-left: 0%;
     font-size: 25px;
     width: 100%;
+  }
+  .fullimage {
+    display: none;
   }
   .landingcontent h2 {
     width: 80%;
@@ -129,6 +138,13 @@
     width: 80%;
     height: 50%;
   }
+  .shapeicon img {
+    width: 100%;
+    display: block;
+  }
+  .btncontain {
+    margin-left: -15px;
+  }
 }
 @media screen and (max-width: 450px) {
   .landingcontainer {
@@ -138,14 +154,17 @@
     margin-bottom: 20px;
   }
   .landingcontent {
-    padding: 5px 20px;
+    padding: 5px 0px;
     margin-top: 50px;
+    margin-left: 0px;
   }
   .shapeicon {
     margin-top: 50px;
+    margin-right: -25px;
   }
   .shapeicon img {
     width: 100%;
+    display: block;
   }
   .landingcontent h2 {
     width: 100%;
@@ -164,6 +183,7 @@
     display: flex;
     flex-direction: column;
     width: 150px;
+    margin-left: 25px;
     margin-top: 25px;
   }
   .watchbtn {

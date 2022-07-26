@@ -5,11 +5,12 @@
   align-items: center;
   color: white;
   padding: 10px 0px;
-  height: 180px;
+  height: 280px;
+  overflow: hidden;
   font-family: "Kulim Park", sans-serif;
 }
 .footerdetail {
-  text-align: right;
+  text-align: left;
   margin-right: 55px;
 }
 .footerdetail h2 {
@@ -31,14 +32,33 @@
 }
 
 .footerdetail p {
-  margin-top: 2px;
+  margin-top: 13px;
   font-size: 16px;
   font-family: "Kulim Park", sans-serif;
 }
 .footerlogo img {
   margin-left: 40px;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+}
+.flexdesktopfooter {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+}
+.flexdesktopfooter span {
+  font-size: 25px;
+}
+.flexdesktopfooter li {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 15px;
+  font-family: "Bellota Text", cursive;
+}
+@media screen and (max-width: 790px) {
+  .flexdesktopfooter {
+    display: none;
+  }
 }
 @media screen and (max-width: 450px) {
   .footercontainer {
@@ -50,6 +70,9 @@
     padding: 10px 0px;
     font-family: "Kulim Park", sans-serif;
   }
+  .flexdesktopfooter {
+    display: none;
+  }
   .footerdetail {
     text-align: right;
     margin-right: 15px;
@@ -59,6 +82,7 @@
     position: relative;
     margin-bottom: 10px;
     font-weight: normal;
+    overflow: visible;
   }
   .footerdetail h2::after {
     height: 5px;
@@ -73,9 +97,8 @@
 
   .footerdetail p {
     margin-top: 2px;
-
+    font-family: "Bellota Text", cursive;
     font-size: 16px;
-    font-family: "Kulim Park", sans-serif;
   }
   .footerlogo img {
     margin-left: 20px;

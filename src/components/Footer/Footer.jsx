@@ -5,7 +5,26 @@ const Footer = () => {
   return (
     <div className="footercontainer">
       <div className="footerlogo">
-        <img src={Logo} alt="" />
+        <img src="https://plusova.com/image/Plusova Ethiopia-logo.png" alt="" />
+      </div>
+      <div className="flexdesktopfooter">
+        <div className="fl1">
+          <ul>
+            <span>Company</span>
+            <li>Home</li>
+            <li>Service</li>
+            <li>About us</li>
+            <li>Price</li>
+          </ul>
+        </div>
+        <div className="fl2">
+          <ul>
+            <span>Platform</span>
+            <li>Community</li>
+            <li>Our work</li>
+            <li>Videos</li>
+          </ul>
+        </div>
       </div>
       <div className="footerdetail">
         <h2>Contact us</h2>

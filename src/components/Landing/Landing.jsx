@@ -43,6 +43,11 @@ const Landing = () => {
             </a>
           </div>
         </div>
+        <img
+          src="https://plusova.com/image/home-bg.png"
+          alt=""
+          className="fullimage"
+        />
         <div className="shapeicon">
           <img src={Shape} alt="" />
         </div>
